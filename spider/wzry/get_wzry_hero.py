@@ -36,20 +36,11 @@ def downHeroPic():
                                    (hero_no, hero_name, index)
                         with open(fileName, 'wb') as fs:
                             fs.write(pic_request.content)
-                except IOError as e:
+                except Exception as e:
                     print(e)
 
-    except OSError as err:
-
-        print("OS error: {0}".format(err))
-
-    except ValueError:
-
-        print("Could not convert data to an integer.")
-
-    except:
-
-        print("Unexpected error:", sys.exc_info()[0])
+    except Exception as err:
+        print("error: {0}".format(err))
 
 if __name__ == '__main__':
     downHeroPic()
