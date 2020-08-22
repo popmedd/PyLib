@@ -11,8 +11,8 @@ if __name__ == '__main__':
     driver.get("https://learning.b.qianxin.com/login/index.php")
 
     # 通过使用选择器选择到表单元素进行模拟输入和点击按钮提交
-    driver.find_element_by_id('username').send_keys('xiongqi1@cmbc.com.cn')
-    driver.find_element_by_id('password').send_keys('Xiongqi@215')  # password
+    driver.find_element_by_id('username').send_keys('')
+    driver.find_element_by_id('password').send_keys('')  # password
     driver.find_element_by_id('loginbtn').click()
 
     dictCookies = driver.get_cookies()

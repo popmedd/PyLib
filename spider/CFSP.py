@@ -6,8 +6,8 @@ from selenium import webdriver
 from requests.packages import urllib3
 from selenium.webdriver.chrome.options import Options
 
-username = 'xiongqi1@cmbc.com.cn'
-password ='Xiongqi@215'
+username = ''
+password =''
 urllib3.disable_warnings()
 dir_path = 'd:/CFSP/'
 chrome_options = Options()
